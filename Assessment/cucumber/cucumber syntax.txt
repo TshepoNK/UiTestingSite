@@ -1,0 +1,12 @@
+Feature: UI home page
+
+  Scenario Outline: Test web function
+    Given User navigates to home page
+    When User clicks form button
+    And press go button
+    Then User verify Hello ! title
+    
+    Examples: 
+        | FormName |
+        | Tshepo   | 
+        | Maurice  |

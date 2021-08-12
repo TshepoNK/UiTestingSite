@@ -1,0 +1,721 @@
+[2021-08-12 16:12:35,187 INFO root] Taurus CLI Tool v1.15.3
+[2021-08-12 16:12:35,187 DEBUG root] Build: 14125 Mon Jun 21 10:23:02 UTC 2021
+[2021-08-12 16:12:35,187 DEBUG root] Extended git info:  1b4fc48a allow to get iterations from jmx (#1492)
+[2021-08-12 16:12:35,187 DEBUG root] Command-line options: {'log': '/tmp/bzt_ztpy39t0.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2021-08-12 16:12:35,187 DEBUG root] Python: CPython 3.8.5
+[2021-08-12 16:12:35,187 DEBUG root] OS: uname_result(system='Linux', node='r-v4-6115486b2184b112837472-0-0-c-q6lcp', release='4.19.150+', version='#1 SMP Tue Nov 24 07:54:23 PST 2020', machine='x86_64', processor='x86_64')
+[2021-08-12 16:12:35,187 DEBUG root] Path to interpreter: /usr/bin/python3
+[2021-08-12 16:12:35,187 DEBUG root] Path to packages: ['/tmp/artifacts', '/usr/local/taurus-cloud/python', '/tmp/artifacts', '/usr/lib/python38.zip', '/usr/lib/python3.8', '/usr/lib/python3.8/lib-dynload', '/usr/local/taurus-cloud/python/lib/python3.8/site-packages', '/usr/local/lib/python3.8/dist-packages', '/usr/lib/python3/dist-packages']
+[2021-08-12 16:12:35,187 DEBUG root] Default python: /usr/local/bin/python
+[2021-08-12 16:12:35,188 DEBUG root] Default python3: /usr/bin/python3
+[2021-08-12 16:12:35,188 INFO root] Starting with configs: ['/tmp/artifacts/taurus-custom-config.yml', '/tmp/artifacts/taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2021-08-12 16:12:35,188 DEBUG root] Using personal config: /shared/.bzt-rc
+[2021-08-12 16:12:35,188 INFO Engine] Configuring...
+[2021-08-12 16:12:35,188 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2021-08-12 16:12:35,204 DEBUG Engine] Base configs list: ['/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/resources/10-base-config.yml', '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcustom/30-custom.yml', '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-08-12 16:12:35,204 DEBUG Engine.Configuration] Configs: ['/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/resources/10-base-config.yml', '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcustom/30-custom.yml', '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-08-12 16:12:35,204 DEBUG Engine.Configuration] Reading /usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/resources/10-base-config.yml as YAML
+[2021-08-12 16:12:35,229 DEBUG Engine.Configuration] Reading /usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcustom/30-custom.yml as YAML
+[2021-08-12 16:12:35,230 DEBUG Engine.Configuration] Reading /usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/50-bztcloud.yml as YAML
+[2021-08-12 16:12:35,246 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-jmeter-plugins-all.yml as YAML
+[2021-08-12 16:12:35,248 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2021-08-12 16:12:35,249 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2021-08-12 16:12:35,249 DEBUG Engine] User configs list: ['/shared/.bzt-rc', '/tmp/artifacts/taurus-custom-config.yml', '/tmp/artifacts/taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2021-08-12 16:12:35,249 DEBUG Engine.Configuration] Configs: ['/shared/.bzt-rc', '/tmp/artifacts/taurus-custom-config.yml', '/tmp/artifacts/taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2021-08-12 16:12:35,250 DEBUG Engine.Configuration] Reading /shared/.bzt-rc as YAML
+[2021-08-12 16:12:35,253 DEBUG Engine.Configuration] Reading /tmp/artifacts/taurus-custom-config.yml as YAML
+[2021-08-12 16:12:35,272 DEBUG Engine.Configuration] Reading /tmp/artifacts/taurus-original-config.yml as YAML
+[2021-08-12 16:12:35,277 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
+[2021-08-12 16:12:35,279 DEBUG Engine.Configuration] Configs: ['/shared/.bzt-rc', '/tmp/artifacts/taurus-custom-config.yml', '/tmp/artifacts/taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2021-08-12 16:12:35,279 DEBUG Engine.Configuration] Reading /shared/.bzt-rc as YAML
+[2021-08-12 16:12:35,283 DEBUG Engine.Configuration] Reading /tmp/artifacts/taurus-custom-config.yml as YAML
+[2021-08-12 16:12:35,309 DEBUG Engine.Configuration] Reading /tmp/artifacts/taurus-original-config.yml as YAML
+[2021-08-12 16:12:35,317 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
+[2021-08-12 16:12:35,319 INFO Engine] Artifacts dir: /tmp/artifacts
+[2021-08-12 16:12:35,319 DEBUG Engine] New artifact filename: /tmp/artifacts/effective
+[2021-08-12 16:12:35,322 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2021-08-12 16:12:35,366 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2021-08-12 16:12:35,367 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.yml
+[2021-08-12 16:12:35,369 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/merged.yml
+[2021-08-12 16:12:35,385 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.json
+[2021-08-12 16:12:35,386 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/merged.json
+[2021-08-12 16:12:35,387 DEBUG Engine] Add existing artifact (move=False): /tmp/artifacts/taurus-custom-config.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] No need to copy /tmp/artifacts/taurus-custom-config.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] Add existing artifact (move=False): /tmp/artifacts/taurus-original-config.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] No need to copy /tmp/artifacts/taurus-original-config.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] Add existing artifact (move=False): /usr/local/bztcloud/final-overrides.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] Copying /usr/local/bztcloud/final-overrides.yml to /tmp/artifacts/final-overrides.yml
+[2021-08-12 16:12:35,387 DEBUG Engine] Set PYTHONPATH to :
+	USER: '/shared/.bzt/python-packages/3.8.5' +
+	TEMP: '/tmp/artifacts/python-packages/3.8.5' +
+	CURRENT: '/usr/local/taurus-cloud/python::/usr/local/taurus-cloud/python:'
+[2021-08-12 16:12:35,388 DEBUG Engine] Content of user packages dir: []
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: JVM_ARGS=-Xms1024m -Xmx4096m -XX:NewSize=64m -XX:MaxNewSize=128m -XX:PermSize=64m -XX:MaxPermSize=64m -XX:MaxTenuringThreshold=2 -Dsun.rmi.dgc.client.gcInterval=600000 -Dsun.rmi.dgc.server.gcInterval=600000 -Dsun.net.inetaddr.ttl=20 -Dnetworkaddress.cache.ttl=20
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_EXECUTIONS_INDEX=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_EXECUTIONS_TOTAL=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_LOCATIONS_INDEX=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_LOCATIONS_TOTAL=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_SESSIONS_INDEX=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_SESSIONS_TOTAL=1
+[2021-08-12 16:12:35,389 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/tmp/artifacts
+[2021-08-12 16:12:35,389 DEBUG root] Closing log handler: /tmp/bzt_ztpy39t0.log
+[2021-08-12 16:12:35,390 DEBUG root] Switched writing logs to /tmp/artifacts/bzt.log
+[2021-08-12 16:12:35,390 DEBUG root] Linting config
+[2021-08-12 16:12:35,401 INFO Engine] Preparing...
+[2021-08-12 16:12:35,402 DEBUG Engine] Module config: functional-consolidator {'class': 'bzt.modules.functional.FunctionalAggregator'}
+[2021-08-12 16:12:35,402 DEBUG root] Importing module: bzt.modules.functional
+[2021-08-12 16:12:35,604 DEBUG root] Loading class: 'FunctionalAggregator' from <module 'bzt.modules.functional' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/functional.py'>
+[2021-08-12 16:12:35,605 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2021-08-12 16:12:35,605 DEBUG root] Importing module: bzt.modules.monitoring
+[2021-08-12 16:12:35,609 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/monitoring.py'>
+[2021-08-12 16:12:35,609 DEBUG Engine] Module config: forced-headers {'class': 'bztcloud.helpers.forcedheaders.ForcedHeaders'}
+[2021-08-12 16:12:35,609 DEBUG root] Importing module: bztcloud.helpers.forcedheaders
+[2021-08-12 16:12:35,846 DEBUG root] Loading class: 'ForcedHeaders' from <module 'bztcloud.helpers.forcedheaders' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/helpers/forcedheaders.py'>
+[2021-08-12 16:12:35,847 DEBUG Engine] Module config: virtual-display {'class': 'bzt.modules.services.VirtualDisplay'}
+[2021-08-12 16:12:35,847 DEBUG root] Importing module: bzt.modules.services
+[2021-08-12 16:12:35,858 DEBUG easyprocess] version=0.2.10
+[2021-08-12 16:12:35,860 DEBUG pyvirtualdisplay] version=0.2.5
+[2021-08-12 16:12:35,875 DEBUG pyscreenshot] version=0.5.1
+[2021-08-12 16:12:35,876 DEBUG root] Loading class: 'VirtualDisplay' from <module 'bzt.modules.services' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/services.py'>
+[2021-08-12 16:12:35,876 DEBUG Engine] Module config: cloud-utils {'class': 'bztcloud.CloudUtilsService', 'commands-channel': {'timeout': '60s', 'url': 'https://a.blazemeter.com/api/v4/taurus/{session_id}/poll'}, 'destination-bucket': {'aws_key_id': None, 'aws_key_secret': None, 'url': None}, 'hosts': ['127.0.0.1 google.com', '127.0.0.1 blazemeter.com'], 'jetlag-download': '', 'jetlag-url': '', 'session': {'session_id': 'r-v4-6115486b2184b112837472', 'signature': 'ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY=', 'test_id': 9831804, 'user_id': 1308561, 'master_id': 36292069, 'session_token': '********'}, 'shutdown-script': 'python -c "from pyscripts.cloud_shutdown import CloudShutdown; CloudShutdown()"', 'start-allow-limit': '1ms', 'start-allow-sleep-interval': '1s', 'start-limit-exceeded-shutdown': False, 'status-notify-timeout': '60s', 'status-notify-url': 'https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify', 'aws-params': {'bucket-name': 'blazemeter-gcp', 'data-path': None, 'data-path-array': ['masters/36292069/tests/9831804', 'masters/36292069/folders', 'masters/36292069/files/common'], 'endpoint_url': 'https://storage.blazemeter.com', 'key-id': 'BZMCRED16D44C68D0E24C2DBA1B1C4FDF90012B', 'region': 'us-east-1', 'report-path': 'masters/36292069/sessions/r-v4-6115486b2184b112837472', 'secret': '********', 'shared-folders': {}, 'token': '********', 'url': 's3://blazemeter-gcp/masters/36292069/sessions/r-v4-6115486b2184b112837472/'}, 'delayed-start': False, 'jetlag-args': '', 'session-token': '********', 'sleep-after': 0}
+[2021-08-12 16:12:35,877 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,877 DEBUG root] Loading class: 'CloudUtilsService' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,877 DEBUG Engine] Module config: periodic-uploader {'class': 'bztcloud.PeriodicFileUploader', 'enabled': True, 'file_names_for_prepare': ['/tmp/artifacts/bzt.log', '/tmp/artifacts/jmeter.log'], 'tail_files_for_prepare': ['/tmp/artifacts/bzt.log', '/tmp/artifacts/jmeter.log'], 'tail_length': 300, 'upload_interval': 60}
+[2021-08-12 16:12:35,877 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,877 DEBUG root] Loading class: 'PeriodicFileUploader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,877 DEBUG Engine] Module config: initial-uploader {'class': 'bztcloud.InitialFileUploader', 'enabled': True, 'file_names_for_prepare': ['/tmp/artifacts/effective.yml', '/tmp/artifacts/effective.json', '/tmp/artifacts/merged.yml', '/tmp/artifacts/merged.json'], 'file_names_for_startup': ['/tmp/artifacts/*.jmx'], 'upload_interval': 0}
+[2021-08-12 16:12:35,877 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,877 DEBUG root] Loading class: 'InitialFileUploader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,878 DEBUG Engine] Module config: version-switch {'class': 'bztcloud.VersionSwitcherService', 'switch-java': None}
+[2021-08-12 16:12:35,878 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,878 DEBUG root] Loading class: 'VersionSwitcherService' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,878 DEBUG Engine] Module config: timelimit {'class': 'bztcloud.helpers.timelimiter.TimeLimiter'}
+[2021-08-12 16:12:35,878 DEBUG root] Importing module: bztcloud.helpers.timelimiter
+[2021-08-12 16:12:35,878 DEBUG root] Loading class: 'TimeLimiter' from <module 'bztcloud.helpers.timelimiter' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/helpers/timelimiter.py'>
+[2021-08-12 16:12:35,878 DEBUG Engine] Module config: shellexec {'class': 'bzt.modules.shellexec.ShellExecutor'}
+[2021-08-12 16:12:35,878 DEBUG root] Importing module: bzt.modules.shellexec
+[2021-08-12 16:12:35,878 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/shellexec.py'>
+[2021-08-12 16:12:35,878 DEBUG Engine] Module config: s3downloader {'class': 'bztcloud.S3Downloader'}
+[2021-08-12 16:12:35,878 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,879 DEBUG root] Loading class: 'S3Downloader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,879 DEBUG Engine] Module config: func-execution-overrider {'class': 'bztcloud.func_exec_overrider.FunctionalExecutionService', 'execution-override': {'concurrency': 1, 'iterations': 1}}
+[2021-08-12 16:12:35,879 DEBUG root] Importing module: bztcloud.func_exec_overrider
+[2021-08-12 16:12:35,879 DEBUG root] Loading class: 'FunctionalExecutionService' from <module 'bztcloud.func_exec_overrider' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/func_exec_overrider.py'>
+[2021-08-12 16:12:35,879 WARNING Engine] Module 'timelimit' can be only used once, will merge all new instances into single
+[2021-08-12 16:12:35,879 DEBUG Engine] Module config: final-notifier {'class': 'bztcloud.FinalNotifier'}
+[2021-08-12 16:12:35,879 DEBUG root] Importing module: bztcloud
+[2021-08-12 16:12:35,879 DEBUG root] Loading class: 'FinalNotifier' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/__init__.py'>
+[2021-08-12 16:12:35,880 DEBUG Engine] Module config: dynjmx {'class': 'bztcloud.helpers.dynjmx.JMXOverrider'}
+[2021-08-12 16:12:35,880 DEBUG root] Importing module: bztcloud.helpers.dynjmx
+[2021-08-12 16:12:35,880 DEBUG root] Loading class: 'JMXOverrider' from <module 'bztcloud.helpers.dynjmx' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/helpers/dynjmx.py'>
+[2021-08-12 16:12:35,881 DEBUG Engine.cloud-utils] Cloud modules version: 0.3.8
+[2021-08-12 16:12:35,881 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "preparing",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjE
+[2021-08-12 16:12:35,883 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:12:35,952 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 131
+[2021-08-12 16:12:35,953 DEBUG Engine.cloud-utils] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "preparing"
+    },
+    "request_id": "61154873e00cd"
+}
+[2021-08-12 16:12:35,955 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/poll
+[2021-08-12 16:12:35,955 DEBUG Engine.cloud-utils] Skipping Jetpack setup since key does not exist
+[2021-08-12 16:12:35,956 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/poll {
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY="
+}
+[2021-08-12 16:12:35,958 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:12:35,958 DEBUG Engine.periodic-uploader] files to upload:
+[2021-08-12 16:12:35,959 DEBUG Engine.periodic-uploader] /tmp/artifacts/bzt.log /tmp/artifacts/jmeter.log
+[2021-08-12 16:12:35,962 DEBUG Engine.periodic-uploader] Starting Periodic File Uploader
+[2021-08-12 16:12:35,963 DEBUG root] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '60', '--aws_params', '/tmp/tmp1zpi_94d.yml', '--periodic_tail', '["/tmp/artifacts/bzt.log", "/tmp/artifacts/jmeter.log"]', '--tail_length', '300', '/tmp/artifacts/bzt.log', '/tmp/artifacts/jmeter.log'] at .
+[2021-08-12 16:12:35,982 DEBUG Engine.periodic-uploader] Periodic File Uploader started
+[2021-08-12 16:12:35,983 DEBUG Engine.initial-uploader] files to upload:
+[2021-08-12 16:12:35,983 DEBUG Engine.initial-uploader] /tmp/artifacts/effective.yml /tmp/artifacts/effective.json /tmp/artifacts/merged.yml /tmp/artifacts/merged.json
+[2021-08-12 16:12:35,987 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
+[2021-08-12 16:12:35,987 DEBUG root] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmp0d1p9w01.yml', '/tmp/artifacts/effective.yml', '/tmp/artifacts/effective.json', '/tmp/artifacts/merged.yml', '/tmp/artifacts/merged.json'] at .
+[2021-08-12 16:12:36,018 DEBUG Engine.initial-uploader] Periodic File Uploader started
+[2021-08-12 16:12:36,019 DEBUG Engine.version-switch] Setting JMeter version to 5.2.1
+[2021-08-12 16:12:36,019 DEBUG Engine.version-switch] Setting Gatling version to 3.5.1
+[2021-08-12 16:12:36,020 DEBUG Engine.shellexec] Added prepare task: {'background': True, 'command': 'python -c "from pyscripts.utils import atop; atop(\'-a\', \'-w\', \'/tmp/artifacts/admin/atop.binlog\', \'15\')"', 'cwd': '/tmp/artifacts/admin', 'err': '/tmp/artifacts/admin/atop-launcher.log', 'ignore-failure': True, 'out': '/tmp/artifacts/admin/atop-launcher.log'}
+[2021-08-12 16:12:36,021 DEBUG Engine.shellexec] Added prepare task: {'background': False, 'command': 'python -c "from pyscripts.jetlag import Jetlag as jl; jl.download()"', 'cwd': '/tmp/artifacts', 'err': '/tmp/artifacts/jetlag-download.log', 'out': '/tmp/artifacts/jetlag-download.log'}
+[2021-08-12 16:12:36,021 DEBUG Engine.shellexec] Added prepare task: {'background': True, 'command': 'python -c "from pyscripts.jetlag import Jetlag as jl; jl.run()"', 'cwd': '/tmp/artifacts', 'err': '/tmp/artifacts/jetlag.log', 'out': '/tmp/artifacts/jetlag.log'}
+[2021-08-12 16:12:36,022 DEBUG Engine.shellexec] Added prepare task: {'background': False, 'command': 'python -c "from pyscripts.jetpack import Jetpack as jp; jp.download()"', 'cwd': '/tmp/artifacts', 'err': '/tmp/artifacts/jetpack-download.log', 'ignore-failure': True, 'out': '/tmp/artifacts/jetpack-download.log'}
+[2021-08-12 16:12:36,023 DEBUG Engine.shellexec] Added prepare task: {'background': True, 'command': 'python -c "from pyscripts.jetpack import Jetpack as jp; jp.run()"', 'cwd': '/tmp/artifacts', 'err': '/tmp/artifacts/jetpack.log', 'ignore-failure': True, 'out': '/tmp/artifacts/jetpack.log'}
+[2021-08-12 16:12:36,024 DEBUG Engine.shellexec] Added post-process task: {'background': False, 'command': 'python -c "from pyscripts.handlers import ProcessHandler as ph; ph.kill()"', 'cwd': '/tmp/artifacts/admin', 'err': '/tmp/artifacts/admin/process-cleanup.log', 'out': '/tmp/artifacts/admin/process-cleanup.log'}
+[2021-08-12 16:12:36,024 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.utils import atop; atop('-a', '-w', '/tmp/artifacts/admin/atop.binlog', '15')"
+[2021-08-12 16:12:36,025 DEBUG root] Executing shell: python -c "from pyscripts.utils import atop; atop('-a', '-w', '/tmp/artifacts/admin/atop.binlog', '15')" at /tmp/artifacts/admin
+[2021-08-12 16:12:36,043 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/poll HTTP/1.1" 200 118
+[2021-08-12 16:12:36,053 DEBUG Engine.cloud-utils] Response [200]: {"session_key":"TAURUS:r-v4-6115486b2184b112837472","cmd":"start","timestamp":1628784749,"message_id":"6115486d36939"}
+[2021-08-12 16:12:36,054 DEBUG Engine.cloud-utils] Got command from server: {'session_key': 'TAURUS:r-v4-6115486b2184b112837472', 'cmd': 'start', 'timestamp': 1628784749, 'message_id': '6115486d36939'}
+[2021-08-12 16:12:36,054 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/poll
+[2021-08-12 16:12:36,054 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/poll {
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY="
+}
+[2021-08-12 16:12:36,057 DEBUG Engine.shellexec.Task] Task started, PID: 47
+[2021-08-12 16:12:36,058 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.jetlag import Jetlag as jl; jl.download()"
+[2021-08-12 16:12:36,059 DEBUG root] Executing shell: python -c "from pyscripts.jetlag import Jetlag as jl; jl.download()" at /tmp/artifacts
+[2021-08-12 16:12:37,169 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python -c "from pyscripts.jetlag import Jetlag as jl; jl.download()"
+[2021-08-12 16:12:37,170 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.jetlag import Jetlag as jl; jl.run()"
+[2021-08-12 16:12:37,171 DEBUG root] Executing shell: python -c "from pyscripts.jetlag import Jetlag as jl; jl.run()" at /tmp/artifacts
+[2021-08-12 16:12:37,191 DEBUG Engine.shellexec.Task] Task started, PID: 84
+[2021-08-12 16:12:37,192 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.jetpack import Jetpack as jp; jp.download()"
+[2021-08-12 16:12:37,193 DEBUG root] Executing shell: python -c "from pyscripts.jetpack import Jetpack as jp; jp.download()" at /tmp/artifacts
+[2021-08-12 16:12:38,771 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python -c "from pyscripts.jetpack import Jetpack as jp; jp.download()"
+[2021-08-12 16:12:38,772 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.jetpack import Jetpack as jp; jp.run()"
+[2021-08-12 16:12:38,772 DEBUG root] Executing shell: python -c "from pyscripts.jetpack import Jetpack as jp; jp.run()" at /tmp/artifacts
+[2021-08-12 16:12:38,791 DEBUG Engine.shellexec.Task] Task started, PID: 122
+[2021-08-12 16:12:38,792 INFO root] Creating new s3 client instance
+[2021-08-12 16:12:38,792 DEBUG root] S3 credential polling interval to set: 0.0
+[2021-08-12 16:12:38,792 INFO root] Polling is not set for this client - S3 client will be created with the given environment variables and will not refresh
+[2021-08-12 16:12:38,793 INFO root] Creating new client: [{'endpoint_url': 'https://storage.blazemeter.com'}, {'aws_access_key_id': '*****'}, {'aws_secret_access_key': '*****'}, {'config': <botocore.config.Config object at 0x7f99615e1ee0>}, {'region_name': 'us-east-1'}, {'verify': True}, {'aws_session_token': 'Tk9BQ0NFU1NUT0tFTg=='}]
+[2021-08-12 16:12:38,945 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): storage.blazemeter.com:443
+[2021-08-12 16:12:39,060 DEBUG urllib3.connectionpool] https://storage.blazemeter.com:443 "GET /blazemeter-gcp?prefix=masters%2F36292069%2Ftests%2F9831804&encoding-type=url HTTP/1.1" 200 554
+[2021-08-12 16:12:39,064 DEBUG Engine.s3downloader] objects for download: [s3.ObjectSummary(bucket_name='blazemeter-gcp', key='masters/36292069/tests/9831804/blazemeter_functional_script.yaml')]
+[2021-08-12 16:12:39,064 DEBUG Engine.s3downloader] Downloading from S3: masters/36292069/tests/9831804/blazemeter_functional_script.yaml => /tmp/artifacts/blazemeter_functional_script.yaml
+[2021-08-12 16:12:39,149 DEBUG urllib3.connectionpool] https://storage.blazemeter.com:443 "HEAD /blazemeter-gcp/masters/36292069/tests/9831804/blazemeter_functional_script.yaml HTTP/1.1" 200 0
+[2021-08-12 16:12:39,265 DEBUG urllib3.connectionpool] https://storage.blazemeter.com:443 "GET /blazemeter-gcp/masters/36292069/tests/9831804/blazemeter_functional_script.yaml HTTP/1.1" 200 1493
+[2021-08-12 16:12:39,344 DEBUG urllib3.connectionpool] https://storage.blazemeter.com:443 "GET /blazemeter-gcp?prefix=masters%2F36292069%2Ffolders&encoding-type=url HTTP/1.1" 200 260
+[2021-08-12 16:12:39,346 DEBUG Engine.s3downloader] objects for download: []
+[2021-08-12 16:12:39,437 DEBUG urllib3.connectionpool] https://storage.blazemeter.com:443 "GET /blazemeter-gcp?prefix=masters%2F36292069%2Ffiles%2Fcommon&encoding-type=url HTTP/1.1" 200 265
+[2021-08-12 16:12:39,441 DEBUG Engine.s3downloader] objects for download: []
+[2021-08-12 16:12:39,441 DEBUG Engine.shellexec] Added prepare task: {'command': 'find . -name \'*.zip\' -exec sh -c \'unzip -o "$0"\' \'{}\' \';\'', 'ignore-failure': True}
+[2021-08-12 16:12:39,441 INFO Engine.shellexec.Task] Starting shell command: find . -name '*.zip' -exec sh -c 'unzip -o "$0"' '{}' ';'
+[2021-08-12 16:12:39,442 DEBUG root] Executing shell: find . -name '*.zip' -exec sh -c 'unzip -o "$0"' '{}' ';' at /tmp/artifacts
+[2021-08-12 16:12:39,468 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: find . -name '*.zip' -exec sh -c 'unzip -o "$0"' '{}' ';'
+[2021-08-12 16:12:39,468 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2021-08-12 16:12:39,469 DEBUG root] Importing module: bzt.modules.provisioning
+[2021-08-12 16:12:39,469 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/provisioning.py'>
+[2021-08-12 16:12:39,469 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler', 'mqtt': 'bzt.jmx.mqtt.MQTTProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst', 'jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst', 'jpgc-webdriver', 'jpgc-wsc', 'bzm-siebel', 'bzm-hls', 'bzm-http2', 'bzm-rte', 'bzm-jmeter-citrix-plugin'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jpgc.repo.sendstats': 'false', 'blazemeter.is_functional': 1, 'jmeter.save.saveservice.assertion_results': 'all', 'jmeter.save.saveservice.assertion_results_failure_message': 'true', 'jmeter.save.saveservice.assertions': 'true', 'jmeter.save.saveservice.bytes': 'true', 'jmeter.save.saveservice.data_type': 'true', 'jmeter.save.saveservice.encoding': 'true', 'jmeter.save.saveservice.hostname': 'true', 'jmeter.save.saveservice.idle_time': 'true', 'jmeter.save.saveservice.label': 'true', 'jmeter.save.saveservice.latency': 'true', 'jmeter.save.saveservice.output_format': 'xml', 'jmeter.save.saveservice.requestHeaders': 'true', 'jmeter.save.saveservice.responseHeaders': 'true', 'jmeter.save.saveservice.response_code': 'true', 'jmeter.save.saveservice.response_data': 'true', 'jmeter.save.saveservice.response_data.on_error': 'true', 'jmeter.save.saveservice.response_message': 'true', 'jmeter.save.saveservice.sample_count': 'true', 'jmeter.save.saveservice.samplerData': 'true', 'jmeter.save.saveservice.sent_bytes': 'true', 'jmeter.save.saveservice.subresults': 'true', 'jmeter.save.saveservice.successful': 'true', 'jmeter.save.saveservice.thread_counts': 'true', 'jmeter.save.saveservice.thread_name': 'true', 'jmeter.save.saveservice.time': 'true', 'jmeter.save.saveservice.url': 'true'}, 'path': '/shared/.bzt/jmeter-taurus/5.2.1'}
+[2021-08-12 16:12:39,469 DEBUG root] Importing module: bzt.modules.jmeter
+[2021-08-12 16:12:39,470 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/jmeter.py'>
+[2021-08-12 16:12:39,470 DEBUG Engine.local] Preparing executor: jmeter/140296502706912
+[2021-08-12 16:12:39,470 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.log
+[2021-08-12 16:12:39,470 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2021-08-12 16:12:39,471 DEBUG Engine.jmeter] Port 4445 is free
+[2021-08-12 16:12:39,471 DEBUG Engine.jmeter] Using port 4445 for management
+[2021-08-12 16:12:39,471 DEBUG Engine] New artifact filename: /tmp/artifacts/requests.jmx
+[2021-08-12 16:12:39,472 DEBUG root] Importing module: bzt.jmx.http
+[2021-08-12 16:12:39,473 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/jmx/http.py'>
+[2021-08-12 16:12:39,473 DEBUG root] Importing module: bzt.jmx.mqtt
+[2021-08-12 16:12:39,474 DEBUG root] Loading class: 'MQTTProtocolHandler' from <module 'bzt.jmx.mqtt' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/jmx/mqtt.py'>
+[2021-08-12 16:12:39,478 DEBUG JMeterScenarioBuilder] Saving JMX to: /tmp/artifacts/requests.jmx
+[2021-08-12 16:12:39,479 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2021-08-12 16:12:39,479 DEBUG Engine] New artifact filename: /tmp/artifacts/system.properties
+[2021-08-12 16:12:39,479 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jpgc.repo.sendstats': 'false', 'blazemeter.is_functional': 1, 'jmeter.save.saveservice.assertion_results': 'all', 'jmeter.save.saveservice.assertion_results_failure_message': 'true', 'jmeter.save.saveservice.assertions': 'true', 'jmeter.save.saveservice.bytes': 'true', 'jmeter.save.saveservice.data_type': 'true', 'jmeter.save.saveservice.encoding': 'true', 'jmeter.save.saveservice.hostname': 'true', 'jmeter.save.saveservice.idle_time': 'true', 'jmeter.save.saveservice.label': 'true', 'jmeter.save.saveservice.latency': 'true', 'jmeter.save.saveservice.output_format': 'xml', 'jmeter.save.saveservice.requestHeaders': 'true', 'jmeter.save.saveservice.responseHeaders': 'true', 'jmeter.save.saveservice.response_code': 'true', 'jmeter.save.saveservice.response_data': 'true', 'jmeter.save.saveservice.response_data.on_error': 'true', 'jmeter.save.saveservice.response_message': 'true', 'jmeter.save.saveservice.sample_count': 'true', 'jmeter.save.saveservice.samplerData': 'true', 'jmeter.save.saveservice.sent_bytes': 'true', 'jmeter.save.saveservice.subresults': 'true', 'jmeter.save.saveservice.successful': 'true', 'jmeter.save.saveservice.thread_counts': 'true', 'jmeter.save.saveservice.thread_name': 'true', 'jmeter.save.saveservice.time': 'true', 'jmeter.save.saveservice.url': 'true', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/tmp/artifacts:/tmp/artifacts'}
+[2021-08-12 16:12:39,482 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter-bzt.properties
+[2021-08-12 16:12:39,482 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2021-08-12 16:12:39,483 DEBUG root] Executing shell: ['java', '-version'] at .
+[2021-08-12 16:12:39,629 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "1.8.0_292"
+OpenJDK Runtime Environment (build 1.8.0_292-8u292-b10-0ubuntu1~20.04-b10)
+OpenJDK 64-Bit Server VM (build 25.292-b10, mixed mode)
+
+[2021-08-12 16:12:39,629 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2021-08-12 16:12:39,630 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2021-08-12 16:12:39,631 DEBUG root] Executing shell: ['/shared/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-j', '/tmp/jmeter1vidd0cwlog', '--version'] at .
+[2021-08-12 16:12:41,625 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.2.1
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+
+[2021-08-12 16:12:41,632 DEBUG Engine] New artifact filename: /tmp/artifacts/trace.jtl
+[2021-08-12 16:12:41,633 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency=1, throughput=None, ramp_up=None, hold=1200.0, iterations=1, duration=1200.0, steps=None)
+[2021-08-12 16:12:41,634 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: iterations are found, regular ThreadGroup will be used
+[2021-08-12 16:12:41,635 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (http://10.12.216.247:8080/-Http) to ThreadGroup and apply load parameters
+[2021-08-12 16:12:41,636 DEBUG Engine] New artifact filename: /tmp/artifacts/modified_requests.jmx
+[2021-08-12 16:12:41,636 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_requests.jmx
+[2021-08-12 16:12:41,637 DEBUG root] Executing shell: ['/shared/.bzt/jmeter-taurus/5.2.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/tmp/artifacts/modified_requests.jmx'] at .
+[2021-08-12 16:12:46,041 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /tmp/artifacts/modified_requests.jmx
+2021-08-12 16:12:43,111 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2021-08-12 16:12:43,158 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-03c640766f8d97016be7c8422718e1b6-nongui
+2021-08-12 16:12:44,584 INFO o.j.r.PluginManager: Plugins Status: [bzm-jmeter-citrix-plugin=0.7.4, bzm-siebel=1.2, bzm-hls=3.1, bzm-http2=1.6.1, bzm-rte=3.2, jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-webdriver=3.3, jpgc-tst=2.5, jpgc-wsc=0.7, jmeter-core=5.2.1, jmeter-ftp=5.2.1, jmeter-http=5.2.1, jmeter-jdbc=5.2.1, jmeter-jms=5.2.1, jmeter-junit=5.2.1, jmeter-java=5.2.1, jmeter-ldap=5.2.1, jmeter-mail=5.2.1, jmeter-mongodb=5.2.1, jmeter-native=5.2.1, jmeter-tcp=5.2.1, jmeter-components=5.2.1]
+2021-08-12 16:12:44,588 INFO o.j.r.PluginManagerCMD: Params line is: /tmp/artifacts/modified_requests.jmx
+2021-08-12 16:12:44,980 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-08-12 16:12:44,989 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-08-12 16:12:45,001 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-08-12 16:12:45,051 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2021-08-12 16:12:45,057 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-08-12 16:12:45,145 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-12 16:12:45,146 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-12 16:12:45,146 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-12 16:12:45,146 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-12 16:12:45,146 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-08-12 16:12:45,146 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-08-12 16:12:45,274 INFO o.j.r.JARSourceHTTP: Downloading: https://github.com/Blazemeter/HLSPlugin/releases/download/v3.1/hlsparserj-c287e78.jar
+2021-08-12 16:12:45,275 INFO o.j.r.PluginManagerCMD: Downloading hlsparserj...
+2021-08-12 16:12:45,474 INFO o.j.r.PluginManagerCMD: Downloaded hlsparserj...
+2021-08-12 16:12:45,475 INFO o.j.r.JARSourceHTTP: Downloading: https://github.com/Blazemeter/HLSPlugin/releases/download/v3.1/mpd-parser-0.8-jdk8.jar
+2021-08-12 16:12:45,476 INFO o.j.r.PluginManagerCMD: Downloading mpd-parser...
+2021-08-12 16:12:45,600 INFO o.j.r.PluginManagerCMD: Downloaded mpd-parser...
+2021-08-12 16:12:45,602 INFO o.j.r.PluginManager: Plugins manager will apply some modifications
+2021-08-12 16:12:45,611 INFO o.j.r.PluginManager: Starting JMeter Plugins modifications
+2021-08-12 16:12:45,655 Thread-3 WARN Unable to register Log4j shutdown hook because JVM is shutting down. Using SimpleLogger
+
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+
+[2021-08-12 16:12:51,047 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.out
+[2021-08-12 16:12:51,047 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.err
+[2021-08-12 16:12:51,048 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2021-08-12 16:12:51,049 DEBUG root] Importing module: bzt.modules.reporting
+[2021-08-12 16:12:51,064 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/reporting.py'>
+[2021-08-12 16:12:51,064 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter', 'disable': True}
+[2021-08-12 16:12:51,064 DEBUG root] Importing module: bzt.modules.console
+[2021-08-12 16:12:51,065 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/console.py'>
+[2021-08-12 16:12:51,065 DEBUG Engine] Module config: ldjson-results {'class': 'bztcustom.ldjsonresults.LDJSONExporter'}
+[2021-08-12 16:12:51,065 DEBUG root] Importing module: bztcustom.ldjsonresults
+[2021-08-12 16:12:51,066 DEBUG root] Loading class: 'LDJSONExporter' from <module 'bztcustom.ldjsonresults' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcustom/ldjsonresults.py'>
+[2021-08-12 16:12:51,066 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader', 'browser-open': 'none', 'address': 'https://a.blazemeter.com', 'data-address': 'https://data.blazemeter.com'}
+[2021-08-12 16:12:51,066 DEBUG root] Importing module: bzt.modules.blazemeter
+[2021-08-12 16:12:51,066 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bzt/modules/blazemeter/__init__.py'>
+[2021-08-12 16:12:51,067 DEBUG Engine] Module config: func-sender {'class': 'bztcloud.reporters.functional.FunctionalReporter'}
+[2021-08-12 16:12:51,067 DEBUG root] Importing module: bztcloud.reporters.functional
+[2021-08-12 16:12:51,069 DEBUG root] Loading class: 'FunctionalReporter' from <module 'bztcloud.reporters.functional' from '/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py'>
+[2021-08-12 16:12:51,069 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2021-08-12 16:12:51,069 DEBUG Engine.blazemeter] Installing http client
+[2021-08-12 16:12:51,071 INFO root] Creating new s3 client instance
+[2021-08-12 16:12:51,071 DEBUG root] S3 credential polling interval to set: 0.0
+[2021-08-12 16:12:51,071 INFO root] Polling is not set for this client - S3 client will be created with the given environment variables and will not refresh
+[2021-08-12 16:12:51,072 INFO root] Creating new client: [{'endpoint_url': 'https://storage.blazemeter.com'}, {'aws_access_key_id': '*****'}, {'aws_secret_access_key': '*****'}, {'config': <botocore.config.Config object at 0x7f99521eff10>}, {'region_name': 'us-east-1'}, {'verify': True}, {'aws_session_token': 'Tk9BQ0NFU1NUT0tFTg=='}]
+[2021-08-12 16:12:51,087 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2021-08-12 16:12:51,129 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2021-08-12 16:12:51,131 INFO Engine] Starting...
+[2021-08-12 16:12:51,131 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f9965f1a1c0>
+[2021-08-12 16:12:51,131 DEBUG Engine] Startup <bztcloud.helpers.forcedheaders.ForcedHeaders object at 0x7f9965ecb340>
+[2021-08-12 16:12:51,131 DEBUG Engine] Startup <bzt.modules.services.VirtualDisplay object at 0x7f996470e1f0>
+[2021-08-12 16:12:51,131 DEBUG easyprocess] command: ['Xvfb', '-help']
+[2021-08-12 16:12:51,140 DEBUG easyprocess] process was started (pid=292)
+[2021-08-12 16:12:51,154 DEBUG easyprocess] process has ended, return code=0
+[2021-08-12 16:12:51,155 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1000']
+[2021-08-12 16:12:51,156 DEBUG easyprocess] command: ['xauth', '-V']
+[2021-08-12 16:12:51,169 DEBUG easyprocess] process was started (pid=293)
+[2021-08-12 16:12:51,170 DEBUG easyprocess] process has ended, return code=0
+[2021-08-12 16:12:51,172 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']
+[2021-08-12 16:12:51,172 DEBUG easyprocess] command: ['xauth', 'add', ':1001', '.', 'c00f5b22cf5fc37e4be8077e845ddaab']
+[2021-08-12 16:12:51,185 DEBUG easyprocess] process was started (pid=294)
+[2021-08-12 16:12:51,187 DEBUG easyprocess] process has ended, return code=0
+[2021-08-12 16:12:51,187 DEBUG easyprocess] stdout=
+[2021-08-12 16:12:51,187 DEBUG easyprocess] stderr=
+[2021-08-12 16:12:51,195 DEBUG easyprocess] process was started (pid=295)
+[2021-08-12 16:12:51,196 DEBUG pyvirtualdisplay.abstractdisplay] DISPLAY=:1001
+[2021-08-12 16:12:51,196 DEBUG easyprocess] command: ['xdpyinfo']
+[2021-08-12 16:12:51,207 DEBUG easyprocess] process was started (pid=296)
+[2021-08-12 16:12:51,321 DEBUG easyprocess] process has ended, return code=0
+[2021-08-12 16:12:51,321 INFO pyvirtualdisplay.abstractdisplay] Successfully started X with display ":1001".
+[2021-08-12 16:12:51,321 INFO Engine.virtual-display] Starting virtual display[(1024, 768)] :1001
+[2021-08-12 16:12:51,322 DEBUG Engine] Startup <bztcloud.CloudUtilsService object at 0x7f99646fc8b0>
+[2021-08-12 16:12:51,325 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "starting",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEw
+[2021-08-12 16:12:51,328 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:12:51,414 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 130
+[2021-08-12 16:12:51,415 DEBUG Engine.cloud-utils] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "starting"
+    },
+    "request_id": "611548835abb8"
+}
+[2021-08-12 16:12:51,416 INFO Engine.cloud-utils] Setting bsh port for jmeter/http://10.12.216.247:8080/-Http to 9000
+[2021-08-12 16:12:51,419 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "ready",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY
+[2021-08-12 16:12:51,421 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:12:51,494 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 127
+[2021-08-12 16:12:51,495 DEBUG Engine.cloud-utils] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "ready"
+    },
+    "request_id": "611548836fbbc"
+}
+[2021-08-12 16:12:51,496 INFO Engine.cloud-utils] Got start command
+[2021-08-12 16:12:51,496 INFO Engine.cloud-utils] Allowed to proceed with start
+[2021-08-12 16:12:51,496 DEBUG Engine] Startup <bztcloud.PeriodicFileUploader object at 0x7f9961669130>
+[2021-08-12 16:12:51,497 DEBUG Engine] Startup <bztcloud.InitialFileUploader object at 0x7f9961669190>
+[2021-08-12 16:12:51,497 DEBUG Engine.initial-uploader] files to upload:
+[2021-08-12 16:12:51,497 DEBUG Engine.initial-uploader] /tmp/artifacts/*.jmx
+[2021-08-12 16:12:51,499 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
+[2021-08-12 16:12:51,499 DEBUG root] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmpgw_s4cjv.yml', '/tmp/artifacts/*.jmx'] at .
+[2021-08-12 16:12:51,516 DEBUG Engine.initial-uploader] Periodic File Uploader started
+[2021-08-12 16:12:51,517 DEBUG Engine] Startup <bztcloud.VersionSwitcherService object at 0x7f99616691c0>
+[2021-08-12 16:12:51,517 DEBUG Engine] Startup <bztcloud.helpers.timelimiter.TimeLimiter object at 0x7f9961669250>
+[2021-08-12 16:12:51,517 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7f99616692e0>
+[2021-08-12 16:12:51,518 DEBUG Engine] Startup <bztcloud.S3Downloader object at 0x7f9961669550>
+[2021-08-12 16:12:51,518 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7f99616695e0>
+[2021-08-12 16:12:51,518 DEBUG Engine] Startup <bztcloud.func_exec_overrider.FunctionalExecutionService object at 0x7f99616696a0>
+[2021-08-12 16:12:51,518 DEBUG Engine] Startup <bztcloud.FinalNotifier object at 0x7f99616697c0>
+[2021-08-12 16:12:51,518 DEBUG Engine] Startup <bztcloud.helpers.dynjmx.JMXOverrider object at 0x7f9961669f40>
+[2021-08-12 16:12:51,520 WARNING Engine.dynjmx] Concurrency parameterization in ThreadGroup (http://10.12.216.247:8080/-Http): skipped
+[2021-08-12 16:12:51,521 WARNING Engine.dynjmx] Ramp-up parameterization in ThreadGroup (http://10.12.216.247:8080/-Http): skipped
+[2021-08-12 16:12:51,522 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_requests.jmx
+[2021-08-12 16:12:51,523 DEBUG Engine] Startup <bzt.modules.functional.FunctionalAggregator object at 0x7f9965ecb1c0>
+[2021-08-12 16:12:51,523 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f99533637c0>
+[2021-08-12 16:12:51,523 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f99532e3df0>
+[2021-08-12 16:12:51,523 INFO Engine.console] Waiting for results...
+[2021-08-12 16:12:51,523 DEBUG Engine] Startup <bztcustom.ldjsonresults.LDJSONExporter object at 0x7f99532d7040>
+[2021-08-12 16:12:51,524 DEBUG Engine] Startup <bzt.modules.blazemeter.blazemeter_reporter.BlazeMeterUploader object at 0x7f99532d7c40>
+[2021-08-12 16:12:51,524 DEBUG Engine] Startup <bztcloud.reporters.functional.FunctionalReporter object at 0x7f9952202370>
+[2021-08-12 16:12:51,524 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f99532c9100>
+[2021-08-12 16:12:51,524 DEBUG Engine.local] Delay setup for jmeter/http://10.12.216.247:8080/-Http: 0(start-at) + 0(delay) = 0
+[2021-08-12 16:12:51,527 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2021-08-12 16:12:51,580 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2021-08-12 16:12:51,582 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2021-08-12 16:12:51,582 DEBUG root] Leveled up log file verbosity
+[2021-08-12 16:12:51,583 DEBUG root] Executing shell: ['/shared/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-t', '/tmp/artifacts/modified_requests.jmx', '-j', '/tmp/artifacts/jmeter.log', '-q', '/tmp/artifacts/jmeter-bzt.properties', '-n', '-S', '/tmp/artifacts/system.properties'] at /tmp/artifacts
+[2021-08-12 16:12:51,598 DEBUG Engine.local] Starting execution: jmeter/http://10.12.216.247:8080/-Http, rest of available slots: 9223372036854775806
+[2021-08-12 16:12:51,598 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2021-08-12 16:13:27,624 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:14:01,660 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:14:38,699 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:15:13,730 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:15:47,768 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:16:22,803 ERROR Engine.func-sender] a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 195, in _sample_to_datum
+    new_fields = self.__save_files(unique_id=id, sample_extras=sample_extras)
+  File "/usr/local/taurus-cloud/python/lib/python3.8/site-packages/bztcloud/reporters/functional.py", line 333, in __save_files
+    json.dump(value, f)
+  File "/usr/lib/python3.8/json/__init__.py", line 180, in dump
+    fp.write(chunk)
+TypeError: a bytes-like object is required, not 'str'
+[2021-08-12 16:16:23,588 WARNING Engine] Please wait for graceful shutdown...
+[2021-08-12 16:16:23,588 DEBUG root] Leveled up log file verbosity
+[2021-08-12 16:16:23,589 INFO Engine] Shutting down...
+[2021-08-12 16:16:23,589 DEBUG Engine] Current stop reason: None
+[2021-08-12 16:16:23,589 DEBUG Engine.local] Shutdown jmeter/http://10.12.216.247:8080/-Http
+[2021-08-12 16:16:23,589 DEBUG pyvirtualdisplay.abstractdisplay] unset DISPLAY
+[2021-08-12 16:16:23,589 DEBUG easyprocess] stopping process (pid=295 cmd="['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']")
+[2021-08-12 16:16:23,590 DEBUG easyprocess] process is active -> sending SIGTERM
+[2021-08-12 16:16:23,633 DEBUG easyprocess] process has ended, return code=0
+[2021-08-12 16:16:23,633 DEBUG easyprocess] stdout=
+[2021-08-12 16:16:23,634 DEBUG easyprocess] stderr=
+[2021-08-12 16:16:23,640 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "shutting down",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJ
+[2021-08-12 16:16:23,645 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:16:23,750 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 135
+[2021-08-12 16:16:23,752 DEBUG Engine.cloud-utils] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "shutting down"
+    },
+    "request_id": "61154957aac7f"
+}
+[2021-08-12 16:16:24,752 INFO Engine.periodic-uploader] Terminating process PID 45 with signal Signals.SIGTERM (59 tries left)
+[2021-08-12 16:16:25,753 INFO Engine.periodic-uploader] Terminating process PID 45 with signal Signals.SIGTERM (58 tries left)
+[2021-08-12 16:16:25,759 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2021-08-12 16:16:25,828 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2021-08-12 16:16:25,831 INFO Engine] Post-processing...
+[2021-08-12 16:16:25,832 DEBUG Engine.local] Post-process jmeter/http://10.12.216.247:8080/-Http
+[2021-08-12 16:16:25,832 DEBUG Engine] Add existing artifact (move=True): /tmp/artifacts/modified_requests.jmx
+[2021-08-12 16:16:25,832 DEBUG Engine] No need to copy /tmp/artifacts/modified_requests.jmx
+[2021-08-12 16:16:25,832 INFO Engine.final-stats] Test duration: 0:03:32
+[2021-08-12 16:16:25,833 INFO Engine.final-stats] Total: 6 tests
+[2021-08-12 16:16:25,833 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/ failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,833 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/ failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,833 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/form.html failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,833 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/error.html failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,834 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/form.html failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,834 WARNING Engine.final-stats] Test http://10.12.216.247:8080/-Http.http://10.12.216.247:8080/hello.html failed: Non HTTP response message: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+org.apache.http.conn.HttpHostConnectException: Connect to 10.12.216.247:8080 [/10.12.216.247] failed: Connection timed out (Connection timed out)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 19 more
+
+[2021-08-12 16:16:25,834 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2021-08-12 16:16:25,834 INFO Engine.ldjson-results] Writing EOF to /tmp/artifacts/exported.jetlag.ldjson file
+[2021-08-12 16:16:25,834 DEBUG Engine.ldjson-results] Opening file for writing: /tmp/artifacts/exported.jetlag.ldjson
+[2021-08-12 16:16:25,836 INFO Engine.ldjson-results] Finished files found
+[2021-08-12 16:16:25,837 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 0
+[2021-08-12 16:16:25,837 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2021-08-12 16:16:25,888 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-v4-6115486b2184b112837472/files?signature=ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY= b'--===============4308285714672500644==\r\nContent-Disposition: file; name="file"; filename="r-v4-6115486b2184b112837472-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-v4-6115486b2184b112837472",\n  "timestamp": 16'
+[2021-08-12 16:16:25,889 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-v4-6115486b2184b112837472/files?signature=ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY=
+[2021-08-12 16:16:26,327 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-v4-6115486b2184b112837472/files?signature=ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEwNmY= HTTP/1.1" 200 159
+[2021-08-12 16:16:26,329 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-v4-6115486b2184b112837472-0-c.monitoring.json"
+    ],
+    "request_id": "61154959dea16"
+}
+[2021-08-12 16:16:26,330 DEBUG Engine.blazemeter] Set last check time to: 1628784771.0667603
+[2021-08-12 16:16:26,334 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "post-processing",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZ
+[2021-08-12 16:16:26,337 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:16:26,410 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 137
+[2021-08-12 16:16:26,412 DEBUG Engine.cloud-utils] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "post-processing"
+    },
+    "request_id": "6115495a5adc5"
+}
+[2021-08-12 16:16:26,412 DEBUG Engine.shellexec.Task] Task is not finished yet: python -c "from pyscripts.utils import atop; atop('-a', '-w', '/tmp/artifacts/admin/atop.binlog', '15')"
+[2021-08-12 16:16:26,412 INFO Engine.shellexec.Task] Background task was not completed, shutting it down: python -c "from pyscripts.utils import atop; atop('-a', '-w', '/tmp/artifacts/admin/atop.binlog', '15')"
+[2021-08-12 16:16:27,414 INFO Engine.shellexec.Task] Terminating process PID 47 with signal Signals.SIGTERM (59 tries left)
+[2021-08-12 16:16:28,416 INFO Engine.shellexec.Task] Terminating process PID 47 with signal Signals.SIGTERM (58 tries left)
+[2021-08-12 16:16:28,417 INFO Engine.shellexec.Task] Starting shell command: python -c "from pyscripts.handlers import ProcessHandler as ph; ph.kill()"
+[2021-08-12 16:16:28,418 DEBUG root] Executing shell: python -c "from pyscripts.handlers import ProcessHandler as ph; ph.kill()" at /tmp/artifacts/admin
+[2021-08-12 16:16:29,811 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python -c "from pyscripts.handlers import ProcessHandler as ph; ph.kill()"
+[2021-08-12 16:16:29,812 DEBUG Engine.final-notifier] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-6115486b2184b112837472/notify {
+ "status": "bzt-done",
+ "token": "ci12NC02MTE1NDg2YjIxODRiMTEyODM3NDcyOjE2Mjk5OTQzNTQ6YjBjNTVkZTRjNzEzZmQyYTcyMmQ1N2RmMzRmNDUwNWUwZDQ5OGU3N2NjODRjNjE5ODE4ZTg0NzI5MGE0YTYwZTBlZDVhNWExMGMyMDcwZmEzODU1ZDJjNGFhZjUyOTEzMzUxNzgyNzg2YmVjMDg4ZDZlOWVkNTZkZjJjNjEw
+[2021-08-12 16:16:29,814 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2021-08-12 16:16:29,882 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-6115486b2184b112837472/notify HTTP/1.1" 200 130
+[2021-08-12 16:16:29,883 DEBUG Engine.final-notifier] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "status": "bzt-done"
+    },
+    "request_id": "6115495dce1f0"
+}
+[2021-08-12 16:16:29,886 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2021-08-12 16:16:29,934 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2021-08-12 16:16:29,937 INFO root] Artifacts dir: /tmp/artifacts
+[2021-08-12 16:16:29,937 INFO root] Done performing with code: 0
+[2021-08-12 16:16:29,938 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log

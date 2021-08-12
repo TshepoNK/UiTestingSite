@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 92.0.4515.131,,,2021-08-12 17:49:19,2021-08-12 17:49:40,20.825s,PASSED
+,,,,,,,
+Test Cases/RunFeatureFile,Chrome 92.0.4515.131,,,2021-08-12 17:49:20,2021-08-12 17:49:22,1.776s,PASSED
+"runFeatureFile(""Include/features/UI Home.feature"")",Chrome 92.0.4515.131,,,2021-08-12 17:49:20,2021-08-12 17:49:22,1.134s,PASSED
+,,,,,,,
+Test Cases/TestUI,Chrome 92.0.4515.131,,,2021-08-12 17:49:22,2021-08-12 17:49:40,18.557s,PASSED
+"openBrowser("""")",Chrome 92.0.4515.131,,,2021-08-12 17:49:22,2021-08-12 17:49:28,5.791s,PASSED
+"navigateToUrl(""http://192.168.8.100:8080/"")",Chrome 92.0.4515.131,,,2021-08-12 17:49:28,2021-08-12 17:49:35,6.678s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_UI Testing Site/a_UI Testing""), 0)",Chrome 92.0.4515.131,,,2021-08-12 17:49:35,2021-08-12 17:49:35,0.452s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_UI Testing Site/h1_Welcome to Pixelmatic QA department""), 0)",Chrome 92.0.4515.131,,,2021-08-12 17:49:35,2021-08-12 17:49:36,0.379s,PASSED
+"click(findTestObject(""Object Repository/Page_UI Testing Site/a_Form""))",Chrome 92.0.4515.131,,,2021-08-12 17:49:36,2021-08-12 17:49:36,0.506s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_UI Testing Site/a_UI Testing""), 0)",Chrome 92.0.4515.131,,,2021-08-12 17:49:36,2021-08-12 17:49:37,0.365s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_UI Testing Site/h1_Simple Form Submission""), ""Simple Form Submission"")",Chrome 92.0.4515.131,,,2021-08-12 17:49:37,2021-08-12 17:49:37,0.390s,PASSED
+"verifyElementVisible(findTestObject(""Object Repository/Page_UI Testing Site/img_Go_if_logo""))",Chrome 92.0.4515.131,,,2021-08-12 17:49:37,2021-08-12 17:49:37,0.432s,PASSED
+"click(findTestObject(""Object Repository/Page_UI Testing Site/button_Go""))",Chrome 92.0.4515.131,,,2021-08-12 17:49:37,2021-08-12 17:49:39,1.164s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_UI Testing Site/h1_Hello""), 0)",Chrome 92.0.4515.131,,,2021-08-12 17:49:39,2021-08-12 17:49:39,0.432s,PASSED
+closeBrowser(),Chrome 92.0.4515.131,,,2021-08-12 17:49:39,2021-08-12 17:49:40,1.190s,PASSED
